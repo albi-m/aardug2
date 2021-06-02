@@ -1,0 +1,13 @@
+.bounce_partner_logo {
+    background-position: 50% 100%;
+    background-image: url(/website_email_snippet/static/img/odoo_gold_partner_rgb.png);
+    height: 80px !important;
+    position: fixed !important;
+    z-index: 1100;
+    width: 135px !important;
+    top: 45px;
+    right: 20px;
+    background-color: #F9F9F9;
+    border-radius: 7px;
+    box-shadow: 0 6px 8px 0 rgba(0, 0, 0, 0.2);
+}

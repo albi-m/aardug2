@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <template id="assets_frontend_emails" inherit_id="web.assets_frontend" name="Website Frontend Assets">
+            <xpath expr="." position="inside">
+                <script type="text/javascript" src="/website_email_snippet/static/src/js/email_mail_send.js"/>
+                <link rel="stylesheet" type="text/scss" href="/website_email_snippet/static/src/css/pricing_style.scss" />
+            </xpath>
+        </template>
+    </data>
+</odoo>

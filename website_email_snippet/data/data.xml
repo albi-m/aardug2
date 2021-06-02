@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+        <record id="email_template_website_email" model="mail.template">
+            <field name="name">Pricelist PDF - Send by Email</field>
+            <field name="email_from">${(object.company_id.email) | safe}</field>
+            <field name="subject">Pricelist PDF - ${object.name or ''}</field>
+            <field name="email_to"> ${object.name | safe}</field>
+            <field name="model_id" ref="website_email_snippet.model_website_email"/>
+            <field name="auto_delete" eval="True"/>
+            <field name="body_html"><![CDATA[
+                <p>Thank You for contact us.</p>
+                <p>Click on Button for get best offer</p>
+                <div><br/>
+                    <a href="/brochure/bedankt" style="background-color: #1abc9c; padding: 15px; text-decoration: none; color: #fff; border-radius: 5px; font-size: 13px;" class="o_default_snippet_text">Get Best Price</a>
+                </div>
+                ]]>
+            </field>
+        </record>
+    </data>
+</odoo>

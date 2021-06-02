@@ -1,0 +1,2 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_website_email,website.email,website_email_snippet.model_website_email,,1,1,1,1

@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<odoo>
+    <data>
+
+        <record id="crm_case_tree_view_leads_inh" model="ir.ui.view">
+            <field name="name">crm.lead.tree.lead.custom</field>
+            <field name="model">crm.lead</field>
+            <field name="inherit_id" ref="crm.crm_case_tree_view_leads"/>
+            <field name="arch" type="xml">
+                <xpath expr="//tree" position="attributes">
+                    <attribute name="default_order">create_date desc</attribute>
+                </xpath>
+            </field>
+        </record>
+
+        <record id="crm_lead_form_email_desc_view_leads_inh" model="ir.ui.view">
+            <field name="name">crm.lead.form.lead.extra.page.custom</field>
+            <field name="model">crm.lead</field>
+            <field name="inherit_id" ref="crm.crm_lead_view_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//page[@name='extra']" position="after">
+                    <page string="Email Description">
+                        <field name="xaa_aa_email_description" widget="html"/>
+                    </page>
+                </xpath>
+            </field>
+        </record>
+
+        <record id="view_mail_message_company_lead_form_inh" model="ir.ui.view">
+            <field name="name">mail.message.company.form.inh</field>
+            <field name="model">mail.message</field>
+            <field name="inherit_id" ref="mail.mail_message_view_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='subtype_id']" position="after">
+                    <field name="xaa_aa_company"/>
+                </xpath>
+            </field>
+        </record>
+
+    </data>
+</odoo>
