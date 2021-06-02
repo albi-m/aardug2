@@ -15,7 +15,7 @@
         3) server action is very helpfull to do any action on opportunity like automatically stage.
         4) custom action is to set activity on opportunity automatically.
     """,
-    'version': '14.0.0.1',
+    'version': '14.0.1.1',
     'depends':['crm'],
     'author': "Aardug, Arjan Rosman",
     'website': "http://www.aardug.nl/",
