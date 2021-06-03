@@ -11,7 +11,7 @@
     'version': '14.0.2.1',
     'summary': '',
     'category': '',
-    'description': """ timesheet writing 14
+    'description': """ timesheet writing 14 module
     """,
     'author': 'Aardug, Arjan Rosman',
     'website': 'http://www.aardug.nl/',
